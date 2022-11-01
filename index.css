@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+   
+} 
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 3em;
+    background-image: url('https://images.unsplash.com/photo-1626170809808-4bfd6f3d15e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(59, 3, 3);
+}
+
+.heading h2 ,small{
+    margin: 0;
+}
+
+small{
+    font-size: 1.4rem;
+
+}
+
+.flex{
+    display: flex;
+    
+    
+}
+.total{
+    justify-content: space-between;
+    font-size: 1.6rem;
+    border-top: 1px solid gray;
+}
+
+
+.item{
+    display: flex;
+    border-bottom: 1px solid;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.item button{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.item-info{
+    display: flex;
+    gap: .2em;
+
+
+}
+.item-price{
+    font-size: 1.5rem;
+}
+
+.item-info p{
+    margin-top: .2rem;
+}
+
+.item-info h3 ,h4{
+    margin: 0;
+}
+
+
+/* topography */
+.item-img p{
+   
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.order-summary{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+    
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+.order{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1em 0 1em;
+    align-self: center;
+    left: 0;
+    right: 0;
+}
+
+.order-btn{
+    background-color: #16db99;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.payment, .appreciation-text{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    justify-content: space-between;
+    padding: 2em;
+   
+}
+
+.payment input ,button{
+    padding: 1em;
+    margin-top: 1em;
+}
+.payment button{
+    background-color: #16db99;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.payment p{
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.order-review{
+    display: flex;
+    margin: 0;
+   
+    align-items: center;
+    align-content: center;
+    font-size: 1.4rem;
+
+}
+
+.order-review button{
+    border: none;
+    color: grey;
+    background-color: white;
+    display:block;
+}
+
+.appreciation-text{
+    color: #16db99;
+}
