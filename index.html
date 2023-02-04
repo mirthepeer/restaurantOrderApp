@@ -1,66 +1,59 @@
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;500;600;800&family=Karla:wght@400;500;800&family=Orbitron&family=Poppins:wght@400;600&family=Roboto:wght@100&family=Smythe&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;500;600;800&family=Karla:wght@400;500;800&family=Orbitron&family=Poppins:wght@400;600&family=Roboto:wght@100&family=Smythe&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="heading">
-            <h2>Mir's Diner</h2>
-            <small>The best burgers in town.</small>
-
-        </div>
+      <div class="heading">
+        <h2>Mir's Diner</h2>
+        <small>The best burgers in town.</small>
+      </div>
     </header>
 
     <main>
-        <div id="menu">
+      <div id="menu"></div>
 
+      <div class="order hide" id="list">
+        <h3 class="order-title">Your order</h3>
+        <div id="order"></div>
+        <div class="total flex">
+          <h3>Total</h3>
+          <p id="total">$0</p>
         </div>
-
-        <div class="order hide" id="list">
-            <h3 class="order-title">Your order</h3>
-            <div id="order"></div>
-            <div class="total flex">
-
-                
-                <h3>Total</h3>
-                <p id="total">$0</p>
-            </div>
-            <button class="order-btn" id="order-btn">Complete order</button>
-          </div>
-          <div class="payment hide" id="payment">
-            <h3 class="payment-title">Enter Card Details</h3>
-            <p class="processing">processing your payment of<span id="pay-amount"></span></p>
-            <form id="form">
-              <input type="text" id="name" placeholder="Enter your name" required>
-              <input type="number" placeholder="Enter your card number" required>
-              <input type="number" placeholder="Enter your CVV" required>
-              <button type="submit" class="payment-btn" id="pay">Pay</button>
-            </form>
-          </div>
-          <div class="hide" id="thanks">
-            <p class="appreciation-text hide" id="processing">Your Order is being proccessed...</p>
-            <p class="appreciation-text hide" id="appreciation">Thanks, <span id="customer"></span>Your order is on its
-              way!</p>
-        </div>
-
-
-
-
-
-
-
-
+        <button class="order-btn" id="order-btn">Complete order</button>
+      </div>
+      <div class="payment hide" id="payment">
+        <h3 class="payment-title">Enter Card Details</h3>
+        <p class="processing">
+          processing your payment of<span id="pay-amount"></span>
+        </p>
+        <form id="form">
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <input type="number" placeholder="Enter your card number" required />
+          <input type="number" placeholder="Enter your CVV" required />
+          <button type="submit" class="payment-btn" id="pay">Pay</button>
+        </form>
+      </div>
+      <div class="hide" id="thanks">
+        <p class="appreciation-text hide" id="processing">
+          Your Order is being proccessed...
+        </p>
+        <p class="appreciation-text hide" id="appreciation">
+          Thanks, <span id="customer"></span>Your order is on its way!
+        </p>
+      </div>
     </main>
-   
-    
 
-<script src="index.js" type="module"></script>
-</body>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
